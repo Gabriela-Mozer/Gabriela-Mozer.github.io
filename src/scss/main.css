@@ -142,7 +142,7 @@
       content: '';
       width: 12px;
       height: 9px;
-      background: url("../../assets/img/small-tick.svg");
+      background: url("../assets/img/small-tick.svg");
       display: block; }
 
 html {
