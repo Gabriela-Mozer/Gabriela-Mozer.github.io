@@ -1,5 +1,6 @@
+@import '../_variables.scss';
 .skills {
-  background: $blue;
+  background: #1070CA;
   color: #fff;
   padding: 64px 16px 88px;
   &__header {
@@ -45,7 +46,7 @@
       content:'';
       width: 12px;
       height: 9px;
-      background: url('../assets/img/small-tick.svg');
+      background: url('../../assets/img/small-tick.svg');
       display: block;
     }
   }
