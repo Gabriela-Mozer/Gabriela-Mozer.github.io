@@ -1,4 +1,4 @@
-@import '../_variables.scss';
+@import '../modules/_variables.scss';
 .skills {
   background: $blue;
   color: #fff;
@@ -42,11 +42,11 @@
     margin: 0;
     &:before {
       position: absolute;
-      left:0;
-      content:'';
+      left: 0;
+      content: '';
       width: 12px;
       height: 9px;
-      background: url('../../assets/img/small-tick.svg');
+      background: url('../assets/img/small-tick.svg');
       display: block;
     }
   }
