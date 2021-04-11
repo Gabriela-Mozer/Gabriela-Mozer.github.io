@@ -1,6 +1,9 @@
 .hero {
   padding: 74px 16px 88px;
-
+@media (min-width:$tablet){
+max-width: 768px;
+margin: 0 auto; 
+}
   &__contact {
     border-radius: 64px;
     color: #fff;
@@ -42,6 +45,34 @@
   }
   &__hello {
     display: none;
+   
+    @media (min-width: $desktop){
+      display: block;
+      background: $blue;
+      color:#fff;
+      padding: 17px 19px;
+      border-radius: 16px;
+      font-weight: bold;
+      font-size: 32px;
+      margin-left: 5px;
+      position:relative;
+
+       &__img{
+        position: relative;
+        top:105px;
+        right:60px;
+      }
+    //   &:after{
+    //     content: "";
+    //     position:absolute;
+    //     top:100%;
+    //     left:32px;
+    //     display: block;
+    //     width:12,5px;
+    //     height: 26,66px;
+    //     // background: url('../../assets/img/Speech_cloud.svg');
+    
+    // }
   }
   &__link {
     font-weight: bold;
@@ -51,4 +82,5 @@
   &__special {
     color: $blue;
   }
+}
 }

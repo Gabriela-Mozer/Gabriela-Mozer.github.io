@@ -45,7 +45,7 @@
     font-weight: bold;
     font-size: 13px;
     line-height: 24px;
-    color:#fff;
+    color: #fff;
   }
   &__window {
     height: 40px;
@@ -57,10 +57,18 @@
   &__label {
     display: block;
     text-align: right;
-    color:$console;
-    font-weight:normal;
+    color: $console;
+    font-weight: normal;
   }
-  &__link{
-      color:$linkConsole;
+  &__link {
+    color: $linkConsole;
+  }
+}
+.projects-grid {
+  display: grid;
+  column-gap: 24px;
+  row-gap: 24px;
+  @media (min-width: $tablet){
+    grid-template-columns: 1fr 1fr;
   }
 }
