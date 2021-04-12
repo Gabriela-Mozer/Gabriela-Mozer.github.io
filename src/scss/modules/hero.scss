@@ -1,4 +1,4 @@
-@import 'modules/variables';
+@import "../modules/_variables.scss";
 .hero {
   padding: 74px 16px 88px;
   @media (min-width: $tablet) {
@@ -39,7 +39,13 @@
         top: 0; 
       }
       &::before{
-        background: url('../../assets/img/{.svg');
+        content:url("../assets/img/{.svg");
+        // background: url("../assets/img/{.svg");
+          right:100%;
+      }
+      &::after{
+        content:url("../assets/img/}.svg");
+        left: 100%;
       }
     }
   }
@@ -124,6 +130,7 @@
     }
     &__special {
       color: $blue;
+      white-space: nowrap;
     }
   }
 }
