@@ -1,13 +1,17 @@
+@import 'modules/variables';
 .hero {
   padding: 74px 16px 88px;
   @media (min-width: $tablet) {
     max-width: 768px;
     margin: 0 auto;
   }
+  @media (min-width: $desktop){
+    max-width: 100%;
+  }
   &__bubble {
     position: absolute;
-    left: 440px;
-    padding-bottom: 130px;
+    left: 600px;
+    padding-bottom: 135px;
   }
   &__contact {
     border-radius: 64px;
@@ -22,6 +26,22 @@
   }
   &__description {
     text-align: center;
+    @media (min-width:$desktop){
+      max-width: 786px;
+      margin: 0 auto;
+      position: relative;
+      &::before, &::after{
+        width:82.94;
+        height: 254.88;
+        content:'';
+        display: block;
+        position: absolute;
+        top: 0; 
+      }
+      &::before{
+        background: url('../../assets/img/{.svg');
+      }
+    }
   }
   &__paragraph {
     font-weight: 300;
