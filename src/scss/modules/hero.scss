@@ -5,7 +5,7 @@
     max-width: 768px;
     margin: 0 auto;
   }
-  @media (min-width: $desktop){
+  @media (min-width: $desktop) {
     max-width: 100%;
   }
   &__bubble {
@@ -26,25 +26,26 @@
   }
   &__description {
     text-align: center;
-    @media (min-width:$desktop){
+    @media (min-width: $desktop) {
       max-width: 786px;
       margin: 0 auto;
       position: relative;
-      &::before, &::after{
-        width:82.94;
+      &::before,
+      &::after {
+        width: 82.94;
         height: 254.88;
-        content:'';
+        content: "";
         display: block;
         position: absolute;
-        top: 0; 
+        top: 0;
       }
-      &::before{
-        content:url("../assets/img/{.svg");
+      &::before {
+        content: url("../assets/img/{.svg");
         // background: url("../assets/img/{.svg");
-          right:100%;
+        right: 100%;
       }
-      &::after{
-        content:url("../assets/img/}.svg");
+      &::after {
+        content: url("../assets/img/}.svg");
         left: 100%;
       }
     }
@@ -55,9 +56,12 @@
     line-height: 32px;
     text-align: center;
     margin-bottom: 48px;
+    text-decoration: none;
+
     @media (min-width: $desktop) {
       font-size: 20px;
       line-height: 40px;
+      margin-bottom: 68px ;
     }
   }
   &__image {
@@ -82,6 +86,7 @@
     @media (min-width: $desktop) {
       font-size: 32px;
       line-height: 40px;
+      margin-bottom: 48px;
     }
   }
   &__header {
@@ -123,14 +128,20 @@
 
     // }
 
-    &__link {
-      font-weight: bold;
-      color: $lightBlue;
-      text-decoration: none;
-    }
+    // &__link {
+    //   font-weight: bold;
+    //   color: $lightBlue;
+    //   text-decoration: none;
+    // }
     &__special {
       color: $blue;
       white-space: nowrap;
     }
   }
+}
+.hero__link,
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: $lightBlue;
 }
