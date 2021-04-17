@@ -1,6 +1,6 @@
 import '../scss/main.scss';
 
-console.log('HELLO 🚀');
+console.log("Hi - Welcome to my page !");
 
 fetch('https://api.github.com/users/Gabriela-Mozer/repos?sort=created')
 .then(res => res.json())
@@ -15,7 +15,7 @@ fetch('https://api.github.com/users/Gabriela-Mozer/repos?sort=created')
            <span class="project__circle"></span>
          </div>
          <div class="project__content">
-           <img src = "../assets/img/githubvec.svg" alt ="">
+           <img src = "img/githubvec.svg" alt ="">
            <h3 class="project__grid project__title">
              <span class="project__label">project:</span> 
              <span> ${name}</span>
@@ -27,19 +27,23 @@ fetch('https://api.github.com/users/Gabriela-Mozer/repos?sort=created')
            <p class ="project__grid">
              <span class="project__label">demo:</span>
              <span
-               >&lt;<a class="project__link" href="${homepage}" title="${name} -demo">see_here</a>&gt;</span
+               >&lt;
+               rel="nofollow noopener noreferrer"
+               <a class="project__link" href="${homepage}"target ="_blank" title="${name} -demo">see_here</a>&gt;</span
              >
            </p>
            <p class ="project__grid">
              <span class="project__label">github:</span>
              <span
-               >&lt;<a class="project__link" href="${html_url}" title="${name}-code">source_code</a
+               >&lt;
+               target ="_blank" rel="nofollow noopener noreferrer"<a class="project__link" href="${html_url}" title="${name}-code">source_code</a
                >&gt;</span
              >
            </p>
          </div>
        </article>`;
-       container.innerHTML += template;
-    }
+      if(description) {
+        container.innerHTML += template;
+    }}
 })
 .catch((e) => console.log(e));

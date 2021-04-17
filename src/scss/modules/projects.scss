@@ -104,10 +104,12 @@
   row-gap: 24px;
   max-width: 1184px;
   margin: 0 auto;
-  max-width : 1000px;
-  grid-template-columns: 1fr 1fr; 
   
+  // grid-template-columns: repeat(3fr, 2); 
+ 
   @media (min-width: $tablet) {
-    grid-template-columns: repeat(auto-fit, minmax($tablet, 2fr)) ;
+    // grid-template-columns: repeat(auto-fit, minmax($tablet, 2fr)) ;
+    grid-template-columns: 1fr 1fr ; 
+    
   }
 }
