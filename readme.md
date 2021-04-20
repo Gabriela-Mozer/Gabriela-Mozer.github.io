@@ -1,12 +1,13 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://Gabriela-Mozer.github.io/portfolio.png)
 
-# WTF Webpack Starter Kit 
+# Gabriela WTF - (Future) Junior Frontend Developer 
 
-Simple toolkit for your static websites development.
+My fist portfolio - website created with WTF course. 
 
-## How to use it?
-
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## TOOLS 
+- WTF webpack starterkit
+- HTML,CSS,JS
+- GitHub API
 
 ## Available scripts
 
