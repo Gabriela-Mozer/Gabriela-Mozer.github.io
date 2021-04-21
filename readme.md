@@ -1,4 +1,4 @@
-![cover](https://Gabriela-Mozer.github.io/portfolio.png)
+![cover](https://Gabriela-Mozer.github.io/img/portfolio.png)
 
 # Gabriela WTF - (Future) Junior Frontend Developer 
 
