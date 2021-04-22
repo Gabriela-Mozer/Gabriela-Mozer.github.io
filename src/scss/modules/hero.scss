@@ -5,13 +5,13 @@
     max-width: 768px;
     margin: 0 auto;
   }
-  @media (max-width: 1360px) {
-    &__bubble {
-      position: absolute;
-      left: 700px;
-      padding-bottom: 135px;
-    }
-  }
+  // @media (max-width: 1370px) {
+  //   &__bubble {
+  //     position: absolute;
+  //     left: 700px;
+  //     padding-bottom: 135px;
+  //   }
+  // }
   @media (min-width: $desktop) {
     max-width: 100%;
   }
@@ -151,4 +151,9 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: $lightBlue;
+}
+.hero__bubble {
+  position: absolute;
+  left: 700px;
+  padding-bottom: 135px;
 }
