@@ -66,6 +66,7 @@
     margin: 0 0 8px 0;
     @media (min-width :$desktop){
       grid-template-columns: 116px 1fr;
+      grid-template-rows: repeat(2 100px);
     }
     &--description{
       margin-bottom: 24px;
@@ -102,14 +103,11 @@
   display: grid;
   column-gap: 24px;
   row-gap: 24px;
-  max-width: 1184px;
+  max-width: 584px;
   margin: 0 auto;
-  
-  // grid-template-columns: repeat(3fr, 2); 
- 
   @media (min-width: $tablet) {
-    // grid-template-columns: repeat(auto-fit, minmax($tablet, 2fr)) ;
-    grid-template-columns: 1fr 1fr ; 
+  
+    grid-template-columns: 1;
     
   }
 }

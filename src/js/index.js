@@ -1,14 +1,14 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
 console.log("Hi - Welcome to my page !");
 
-fetch('https://api.github.com/users/Gabriela-Mozer/repos?sort=created')
-.then(res => res.json())
-.then((res)=>{
-    const container = document.querySelector('.projects-grid--js');
-    for (let repo of res){
-        const {description, homepage,html_url,name} = repo;
-         const template = ` <article class="project">
+fetch("https://api.github.com/users/Gabriela-Mozer/repos?sort=created")
+  .then((res) => res.json())
+  .then((res) => {
+    const container = document.querySelector(".projects-grid--js");
+    for (let repo of res) {
+      const { description, homepage, html_url, name } = repo;
+      const template = ` <article class="project">
          <div class="project__window">
            <span class="project__circle"></span>
            <span class="project__circle"></span>
@@ -28,8 +28,7 @@ fetch('https://api.github.com/users/Gabriela-Mozer/repos?sort=created')
              <span class="project__label">demo:</span>
              <span
                >&lt;
-               rel="nofollow noopener noreferrer"
-               <a class="project__link" href="${homepage}"target ="_blank" title="${name} -demo">see_here</a>&gt;</span
+               <a class="project__link" "target ="_blank" rel="nofollow noopener noreferrer" href="${homepage} title="${name} -demo">see_here</a>&gt;</span
              >
            </p>
            <p class ="project__grid">
@@ -42,8 +41,9 @@ fetch('https://api.github.com/users/Gabriela-Mozer/repos?sort=created')
            </p>
          </div>
        </article>`;
-      if(description) {
+      if (description) {
         container.innerHTML += template;
-    }}
-})
-.catch((e) => console.log(e));
+      }
+    }
+  })
+  .catch((e) => console.log(e));
